@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendPostcardButtonPress(sender: UIButton) {
+        //Comment added to test commit
         messageLabel.hidden = false
         messageLabel.text = enterMessageTF.text
         messageLabel.textColor = UIColor.redColor()
