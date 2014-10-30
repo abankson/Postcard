@@ -104,6 +104,15 @@
                                     <action selector="sendPostcardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vu-LN-8Kq"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8q-f4-flr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="129" width="256" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="r2T-Av-R5N"/>
                                 <exclude reference="62c-Ik-Fek"/>
                                 <exclude reference="88Q-qv-3Jt"/>
+                                <exclude reference="L8q-f4-flr"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +132,7 @@
                                 <include reference="r2T-Av-R5N"/>
                                 <include reference="62c-Ik-Fek"/>
                                 <include reference="88Q-qv-3Jt"/>
+                                <include reference="L8q-f4-flr"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <outlet property="enterMessageTF" destination="r2T-Av-R5N" id="HDh-6p-Cme"/>
                         <outlet property="enterNameTF" destination="Tu9-uC-5Lj" id="rVJ-2R-nAh"/>
                         <outlet property="messageLabel" destination="9lm-eq-Zpe" id="AG4-8M-W7j"/>
+                        <outlet property="nameLabel" destination="L8q-f4-flr" id="8st-Ji-78r"/>
                         <outlet property="sendPostcardButton" destination="88Q-qv-3Jt" id="ond-Fn-beu"/>
                     </connections>
                 </viewController>

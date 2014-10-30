@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameTF: UITextField!
     @IBOutlet weak var enterMessageTF: UITextField!
     @IBOutlet weak var sendPostcardButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +27,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendPostcardButtonPress(sender: UIButton) {
-        //Comment added to test commit
+        //Message Label Activation
         messageLabel.hidden = false
         messageLabel.text = enterMessageTF.text
         messageLabel.textColor = UIColor.redColor()
         
+        //Name Label Activation
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTF.text
+        nameLabel.textColor = UIColor.blueColor()
+        
+        //Clear Input Fields
         enterMessageTF.text = ""
-        //messageLabel.text = "Hello, World"
+        enterNameTF.text = ""
         
         enterMessageTF.resignFirstResponder()
+        enterNameTF.resignFirstResponder()
         sendPostcardButton.setTitle("Postcard Sent", forState: UIControlState.Normal)
     }
 
